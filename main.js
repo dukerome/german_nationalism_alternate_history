@@ -16,7 +16,7 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: false,
       // this breaks jquery if it's used as a separate script, but not if it's done inline.
-      nodeIntegration: false
+      nodeIntegration: true
     }
   });
 
