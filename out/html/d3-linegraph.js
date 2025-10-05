@@ -2,6 +2,8 @@
  * generating a line graph of multipile parties with multiple dates...
  * */
 
+window.d3 = require("d3");
+
 function addMonths(date, months) {
     date = new Date(date);
     var d = date.getDate();
@@ -13,7 +15,7 @@ function addMonths(date, months) {
 }
 
 
-d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
+window.d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
         parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];

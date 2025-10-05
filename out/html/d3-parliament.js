@@ -3,7 +3,9 @@
  * © Copyright 2016 - Geoffrey Brossard (me@geoffreybrossard.fr)
  */
 
-d3.parliament = function() {
+var d3 = require("d3");
+
+window.d3.parliament = function() {
     /* params */
     var width,
         height,

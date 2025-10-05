@@ -7,7 +7,7 @@ const steamworks = require('steamworks.js');
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    autoHideMenuBar: true,
+    //autoHideMenuBar: true,
     //width: 1600,
     //height: 900,
     //titleBarStyle: 'hidden',
@@ -16,7 +16,7 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: false,
       // this breaks jquery if it's used as a separate script, but not if it's done inline.
-      nodeIntegration: true
+      nodeIntegration: false
     }
   });
 
@@ -50,3 +50,4 @@ app.on('window-all-closed', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+//require('steamworks.js').electronEnableSteamOverlay();

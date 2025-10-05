@@ -15,6 +15,10 @@
   },
   "homepage": "https://github.com/aucchen/social_democracy_alternate_history",
   "dependencies": {
+    "browserify": "^17.0.1",
+    "d3": "^7.9.0",
+    "esmify": "^2.1.1",
+    "jquery": "^3.7.1",
     "parliament-svg": "^3.0.0",
     "steamworks.js": "^0.4.0"
   },
@@ -28,11 +32,11 @@
     "mac": {
       "category": "game"
     },
-    "win": {
-    }
+    "win": {}
   },
   "scripts": {
     "dendrynexus": "dendrynexus",
+    "browserify": "browserify",
     "start": "electron .",
     "app:dir": "electron-builder --dir",
     "app:dist": "electron-builder",
