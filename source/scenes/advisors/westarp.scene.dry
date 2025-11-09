@@ -1,0 +1,71 @@
+title: Kuno von Westarp
+is-pinned-card: true 
+tags: advisor, conservative
+card-image: img/portraits/MüllerHermann.jpg
+new-page: true
+view-if: westarp_advisor = 1
+
+= Kuno von Westarp
+
+
+Westarp is [? if dnvpchairman = "Westarp": Chairman ?] a long-time German Nationalist leader.
+
+- @coalition
+- @emergency_fundraising
+- @clear_agenda
+- @snap_election
+- @party_discipline
+- @root: Return to main
+
+@coalition
+title: Negotiating with the Center-Right
+subtitle: Müller can improve our relationships with the center-right parties.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if dnvp_in_government = 1 and coalition_dissent > 0; z_relation += 5; wp_relation += 5; cnblp_relation += 5; ddp_relation += 5; dvp_relation += 5
+
+We have improved our relations with the Z, CNBLP, WP, [+ ddp_name +], and DVP.
+
+@emergency_fundraising
+title: Emergency Fundraising
+view-if: difficulty < 1
+subtitle: An emergency infusion of resources.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; resources += dues
+
+We have gained +[+ dues +] resources.
+
+@party_discipline
+title: Party Discipline
+subtitle: Reduce dissent across the party.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; radical_dissent -= 5; conservative_dissent -= 10; agrarian_dissent -= 10; peoplesconservative_dissent -= 10; christiansocial_dissent -= 5
+
+We have enforced party discipline to reduce dissent across all factions.
+
+@clear_agenda
+title: Clear the agenda
+subtitle: Removes all cards from the hand.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+}
+!}
+
+All items from our agenda have been cleared.
+
+@snap_election
+title: Snap Election
+subtitle: Call a snap election.
+unavailable-subtitle: [? if president != "Westarp" : Westarp must be President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0 and president == "Westarp"
+on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12;
+
+We have called for new elections, set for [+ next_election_month : month +] [+ next_election_year +].
