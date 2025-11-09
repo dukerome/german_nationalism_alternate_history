@@ -585,7 +585,6 @@ Q.oldenburg-januschau_advisor = 0; // Elard von Oldenburg-Januschau
 Q.hassell_advisor = 0; // Ulrich von Hassell
 Q.gierke_advisor = 0; // Anna von Gierke
 Q.netz_advisor = 0; // Marie Netz
-
 !}
 set-bg: img/map_2.jpg
 new-page: true
