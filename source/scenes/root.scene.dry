@@ -46,7 +46,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
+Q.factions = ['radical', 'conservative', 'agrarian', 'peoplesconservative', 'christiansocial'];
 // should this be normalized to 100%?
 Q.radical_strength = 25;
 Q.radical_dissent = 20;
@@ -88,7 +88,7 @@ Q.economic_plan = 0;
 // have we officially adopted the Gereke plan?
 Q.gereke_adopted = 0;
 // have we officially adopted the Lejeune-Jung plan?
-Q.lejeune_jung__adopted = 0;
+Q.lejeune_jung_adopted = 0;
 // have we formed the Harzburg front?
 Q.harzburg_front_formed = 0;
 // support for autarky
@@ -458,7 +458,7 @@ Q.spd_no_confidence = 0;
 Q.no_confidence_against_spd = 0;
 
 // Advisors/Leaders
-Q.n_advisors = 3;
+Q.n_advisors = 4;
 // timer - this decrements by 1 every turn, and is set to 5 whenever an advisor action is used, so that you can only use one advisor action every 5 months.
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
