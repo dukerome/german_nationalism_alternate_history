@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-DNVP position: [? if dnvp_toleration : toleration ?][? if dnvp_in_government : in government - ?][? if dnvp_toleration == 0 and dnvp_in_government == 0 and dnvp_caretaker == 0 : opposition ?][? if dnvp_caretaker : caretaker government ?]
+DNVP position: [? if dnvp_toleration : toleration ?][? if dnvp_in_government : in government ?][? if dnvp_toleration == 0 and dnvp_in_government == 0 and dnvp_caretaker == 0 : opposition ?][? if dnvp_caretaker : caretaker government ?]
 [? if in_center_right_coalition and dnvp_in_government: Center-Right Coalition ?][? if in_right_wing_coalition and dnvp_in_government: Right-Wing Coalition ?][? if in_far_right_coalition and dnvp_in_government: Far-Right Front ?][? if in_hindenburg_coalition and dnvp_in_government: Reichsblock Coalition ?][? if in_dnvp_majority and dnvp_in_government: DNVP majority ?][? if in_minority_government and dnvp_in_government: minority government ?][? if in_emergency_government and dnvp_in_government: emergency government ?]
 
 [? if dnvp_in_government and not in_dnvp_majority: Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
