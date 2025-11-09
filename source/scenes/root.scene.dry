@@ -605,11 +605,11 @@ The creator of the mod does not, in any way, support, endorse, or justify extrem
 - @1928_historical: Begin (historical mode)
 
 @1928_easy
-on-arrival: difficulty = -1; resources = 3; dues = 2; nsdap_relation = 29; z_relation = 54; ddp_relation = 49; budget = 4;
+on-arrival: difficulty = -1; resources = 3; dues = 2; nsdap_relation = 29; dvp_relation = 64; z_relation = 49; ddp_relation = 40; budget = 4;
 go-to: 1928_main
 
 @1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; peoplesconservative_dissent = 25; radical_dissent = 30; agrarian_dissent = 25; conservative_dissent = 25; peoplesconservative_dissent = 25; z_relation = 41; nsdap_relation = 16; ddp_relation = 31; budget = 3;
+on-arrival: difficulty = 1; resources = 0; dues = 1; peoplesconservative_dissent = 25; radical_dissent = 30; agrarian_dissent = 25; conservative_dissent = 25; peoplesconservative_dissent = 25; dvp_relation = 56; nsdap_relation = 16; z_relation = 45; ddp_relation = 39; budget = 3;
 go-to: 1928_main
 
 @1928_historical
@@ -624,6 +624,7 @@ Q.radical_dissent = 30;
 Q.conservative_dissent = 25;
 Q.peoplesconservative_dissent = 25;
 Q.christiansocial_dissent = 25;
+Q.dvp_relation = 50;
 Q.z_relation = 41;
 Q.nsdap_relation = 16;
 Q.ddp_relation = 31;
