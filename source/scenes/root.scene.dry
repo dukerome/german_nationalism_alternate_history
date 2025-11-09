@@ -75,7 +75,7 @@ Q.radicalization = 0;
 // Support for the Gereke plan
 Q.gereke_support = 0;
 // Support for the Lejeune-Jung plan
-Q.lejeune-jung_support = 0;
+Q.lejeune_jung_support = 0;
 // Support for Pacifism within the SPD relative to 1928
 Q.pacifism = 0;
 // Support for democratic reform within the SPD relative to 1928
@@ -88,7 +88,7 @@ Q.economic_plan = 0;
 // have we officially adopted the Gereke plan?
 Q.gereke_adopted = 0;
 // have we officially adopted the Lejeune-Jung plan?
-Q.lejeune-jung__adopted = 0;
+Q.lejeune_jung__adopted = 0;
 // have we formed the Harzburg front?
 Q.harzburg_front_formed = 0;
 // support for autarky
@@ -422,8 +422,8 @@ Q.land_reform = 0;
 // works-creation programs (i.e. WTB-plan) - how much have they implemented?
 Q.gereke_program = 0;
 Q.gereke_implemented = 0;
-Q.lejeune-jung_program = 0;
-Q.lejeune-jung_implemented = 0;
+Q.lejeune_jung_program = 0;
+Q.lejeune_jung_implemented = 0;
 // Relations with the Western countries (France, UK).
 Q.west_relation = 0;
 // Relations with the Eastern countries (Poland, Czechoslovakia)
@@ -546,7 +546,7 @@ Q.bang_advisor = 0; // Paul Bang
 Q.quaatz_advisor = 0; // Reinhold Quaatz
 Q.geisler_advisor = 0; // Fritz Geisler
 Q.gürtner_advisor = 0; // Franz Gürtner
-Q.schmidt-hannover_advisor = 0; // Otto Schmidt-Hannover
+Q.schmidt_hannover_advisor = 0; // Otto Schmidt-Hannover
 Q.bose_advisor = 0; // Herbert von Bose
 Q.hadeln_advisor = 0; // Charlotte von Hadeln
 
@@ -556,16 +556,16 @@ Q.goerdeler_advisor = 0; // Carl Goerdeler
 Q.vorbeck_advisor = 0; // Paul von Lettow Vorbeck
 
 // Agrarian advisors
-Q.schlange-schöningen_advisor = 0; // Hans Schlange-Schöningen
+Q.schlange_schöningen_advisor = 0; // Hans Schlange-Schöningen
 Q.gereke_advisor = 0; // Günther Gereke
 Q.keudell_advisor = 0; // Walter von Keudell
 Q.kalckreuth_advisor = 0; // Eberhard Graf von Kalckreuth
 
 // People’s Conservatives advisors
 Q.treviranus_advisor = 0; // Gottfried Treviranus
-Q.lejeune-jung_advisor = 0; // Paul Lejeune-Jung
+Q.lejeune_jung_advisor = 0; // Paul Lejeune-Jung
 Q.hartmann_advisor = 0; // Georg Hartmann
-Q.lindeiner-wildau_advisor = 0; // Hans Erdmann von Lindeiner-Wildau
+Q.lindeiner_wildau_advisor = 0; // Hans Erdmann von Lindeiner-Wildau
 
 // Revisionist advisors
 Q.lambach_advisor = 0; // Walther Lambach
@@ -581,7 +581,7 @@ Q.braun_advisor = 0; // Magnus von Braun
 Q.winterfeld_advisor = 0; // Friedrich von Winterfeld
 Q.sieveking_advisor = 0; // Hermann Otto Sieveking
 Q.bismarck_advisor = 0; // Herbert von Bismarck
-Q.oldenburg-januschau_advisor = 0; // Elard von Oldenburg-Januschau
+Q.oldenburg_januschau_advisor = 0; // Elard von Oldenburg-Januschau
 Q.hassell_advisor = 0; // Ulrich von Hassell
 Q.gierke_advisor = 0; // Anna von Gierke
 Q.netz_advisor = 0; // Marie Netz
