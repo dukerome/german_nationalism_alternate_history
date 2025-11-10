@@ -60,10 +60,10 @@ Q.christiansocial_strength = 10;
 Q.christiansocial_dissent = 10;
 
 // secret events...
-Q.csvd_independent = 0;
+Q.csvd_exist = 0;
 Q.agrarians_resign = 0;
-Q.dnf_split = 0;
-Q.kvp_split = 0;
+Q.dnf_exist = 0;
+Q.kvp_exist = 0;
 Q.westarp_split = 0;
 
 // crisis_urgency indicates how seriously the DNVP is taking the economic crisis - scale from 0 to 10.
@@ -106,10 +106,13 @@ Q.nsdap_relation = 25;
 Q.dvp_relation = 60;
 q.wp_relation = 50;
 q.cnblp_relation = 55;
+q.dnf_relation = 40;
+q.kvp_relation = 40;
+q.csvd_relation = 20;
 Q.ddp_relation = 35;
 // SPD and KPD are invariably hostile
-Q.KPD_relation = 10;
-Q.SPD_relation = 0;
+Q.KPD_relation = 00;
+Q.SPD_relation = 10;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
@@ -241,11 +244,13 @@ Q.sapd_formed = 0;
 Q.workers_spd = 60;
 Q.workers_kpd = 20;
 Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
+Q.workers_ddp = 1;
+Q.workers_dvp = 1;
+Q.workers_wp = 0;
+Q.workers_cnblp = 0;
 Q.workers_dnvp = 5;
 Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.workers_other = 8;
 
 Q.old_middle_spd = 5;
 Q.old_middle_kpd = 0;
@@ -253,44 +258,54 @@ Q.old_middle_z = 5;
 Q.old_middle_ddp= 10;
 Q.old_middle_dvp = 25;
 Q.old_middle_dnvp = 25;
-Q.old_middle_nsdap = 10;
-Q.old_middle_other = 10;
+Q.new_middle_wp = 12;
+Q.new_middle_cnblp = 0;
+Q.old_middle_nsdap = 5;
+Q.old_middle_other = 3;
 
 Q.new_middle_spd = 5;
 Q.new_middle_kpd = 1;
 Q.new_middle_z = 10;
 Q.new_middle_ddp= 25;
-Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
+Q.new_middle_dvp = 20;
+Q.old_middle_wp = 25;
+Q.old_middle_cnblp = 0
+Q.new_middle_dnvp = 15;
 Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.new_middle_other = 1;
 
 Q.rural_spd = 10;
 Q.rural_kpd = 0;
 Q.rural_z = 5;
 Q.rural_ddp= 5;
 Q.rural_dvp = 15;
+Q.rural_wp = 0;
+Q.rural_cnblp = 15;
 Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.rural_nsdap = 4;
+Q.rural_other = 5;
 
 Q.unemployed_spd = 25;
 Q.unemployed_kpd = 55;
 Q.unemployed_z = 1;
 Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
+Q.unemployed_wp = 0;
+Q.unemployed_cnblp = 0;
 Q.unemployed_dnvp = 5;
 Q.unemployed_nsdap = 15;
-Q.unemployed_other = 9;
+Q.unemployed_other = 2;
 
 Q.catholics_spd = 15;
 Q.catholics_kpd = 2;
 Q.catholics_z = 50;
 Q.catholics_ddp = 0;
 Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
+Q.catholics_wp = 1;
+Q.catholics_cnblp = 0;
+Q.catholics_dnvp = 9;
 Q.catholics_nsdap = 0;
-Q.catholics_other = 12;
+Q.catholics_other = 4;
 
 
 // Current Reichstag composition
